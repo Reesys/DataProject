@@ -12,6 +12,7 @@
 		CD3FD84521AC7D0F00CDD88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3FD84321AC7D0F00CDD88C /* Main.storyboard */; };
 		CD3FD84721AC7D1500CDD88C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3FD84621AC7D1500CDD88C /* Assets.xcassets */; };
 		CD3FD84A21AC7D1500CDD88C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3FD84821AC7D1500CDD88C /* LaunchScreen.storyboard */; };
+		CD89818C21AC7E0400EE143D /* DataProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD89818B21AC7E0400EE143D /* DataProject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CD3FD84621AC7D1500CDD88C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD3FD84921AC7D1500CDD88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD3FD84B21AC7D1500CDD88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD89818B21AC7E0400EE143D /* DataProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		CD3FD83E21AC7D0F00CDD88C /* DataProject */ = {
 			isa = PBXGroup;
 			children = (
-				CD3FD83F21AC7D0F00CDD88C /* AppDelegate.swift */,
-				CD3FD84121AC7D0F00CDD88C /* ViewController.swift */,
-				CD3FD84321AC7D0F00CDD88C /* Main.storyboard */,
-				CD3FD84621AC7D1500CDD88C /* Assets.xcassets */,
-				CD3FD84821AC7D1500CDD88C /* LaunchScreen.storyboard */,
-				CD3FD84B21AC7D1500CDD88C /* Info.plist */,
+				CD89818A21AC7DE800EE143D /* Model */,
+				CD89818921AC7DD500EE143D /* Resources */,
+				CD89818821AC7DC800EE143D /* Controller */,
+				CD89818721AC7DB300EE143D /* View */,
 			);
 			path = DataProject;
+			sourceTree = "<group>";
+		};
+		CD89818721AC7DB300EE143D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD3FD84321AC7D0F00CDD88C /* Main.storyboard */,
+				CD3FD84821AC7D1500CDD88C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD89818821AC7DC800EE143D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD3FD84121AC7D0F00CDD88C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD89818921AC7DD500EE143D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD3FD83F21AC7D0F00CDD88C /* AppDelegate.swift */,
+				CD3FD84621AC7D1500CDD88C /* Assets.xcassets */,
+				CD3FD84B21AC7D1500CDD88C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD89818A21AC7DE800EE143D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD89818B21AC7E0400EE143D /* DataProject.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,7 @@
 			files = (
 				CD3FD84221AC7D0F00CDD88C /* ViewController.swift in Sources */,
 				CD3FD84021AC7D0F00CDD88C /* AppDelegate.swift in Sources */,
+				CD89818C21AC7E0400EE143D /* DataProject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DataProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DataProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DataProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DataProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
